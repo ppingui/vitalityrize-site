@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy – JPG Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: July 4, 2025</p>
+
+    <p><strong>JPG Converter</strong> is a fully offline, privacy-first iOS application that allows you to convert images between formats directly on your device. We respect your privacy and ensure that all data remains on your device unless you explicitly choose to share or export it.</p>
+
+    <h2>1. Data Collection</h2>
+    <p>We do not collect, transmit, or store any personal or image data externally. All processing and conversions are performed locally on your device.</p>
+
+    <h2>2. No Account or Login</h2>
+    <p>JPG Converter does not require account creation, login, or cloud syncing. Your use of the app is entirely anonymous and local.</p>
+
+    <h2>3. Analytics and Tracking</h2>
+    <p>The app does not use third-party analytics, ad networks, or tracking technologies of any kind.</p>
+
+    <h2>4. Optional Email Contact</h2>
+    <p>If you contact us via email at <a href="mailto:support@vitalityrize.me">support@vitalityrize.me</a>, we may retain the email solely for the purpose of responding to your request.</p>
+
+    <h2>5. In-App Purchases</h2>
+    <p>All purchases are processed securely by Apple through the App Store. We do not receive or store any payment information.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>No personal data is collected by the app. If you wish to remove all usage data, simply delete the app from your device.</p>
+
+    <h2>7. Changes</h2>
+    <p>We may update this Privacy Policy as needed. Any changes will be posted here and effective immediately upon publishing.</p>
+
+    <footer>
+      <p>&copy; 2025 Kyrylo Lozovyi | vitalityrize.me</p>
+    </footer>
+  </div>
+</body>
+</html>
