@@ -15,7 +15,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).parent
 APP = HERE.parent / "VitalityRise"
-RAW_SRC = APP / "marketing" / "screenshots" / "out" / "raw" / "en"
+RAW_SRC = APP / "marketing" / "screenshots" / "out" / "raw"
+
+# Site locale -> the app's screenshot locale directory. Each localized page shows
+# the app in its own language; an English screenshot under German alt text is a
+# small lie that is easy not to tell.
+LOCALES = {
+    "en": "en", "de": "de", "es": "es-ES", "fr": "fr", "pt": "pt-BR", "ja": "ja",
+}
 ICON_SRC = APP / "AppIcon.png"
 OUT = HERE / "assets"
 SHOT_OUT = OUT / "shots"
@@ -44,19 +51,24 @@ def rounded(size: int, weight: str = "Bold") -> ImageFont.FreeTypeFont:
 
 def screenshots() -> None:
     """Clean app screens, not the App Store marketing panels — those have baked-in
-    headlines that would fight the page copy."""
-    SHOT_OUT.mkdir(parents=True, exist_ok=True)
-    for name in SHOTS:
-        src = RAW_SRC / f"{name}.png"
-        if not src.exists():
-            print(f"  missing {src}")
-            continue
-        im = Image.open(src).convert("RGB")
-        # 2x the 12rem CSS display width — retina-sharp, small on the wire.
-        im = im.resize((430, 932), Image.LANCZOS)
-        dst = SHOT_OUT / f"{name}.jpg"
-        im.save(dst, "JPEG", quality=82, optimize=True, progressive=True)
-        print(f"  {dst.relative_to(HERE)}  {dst.stat().st_size // 1024} KB")
+    headlines that would fight the page copy.
+
+    English lands in assets/shots/, every other locale in assets/shots/<locale>/.
+    """
+    for site_locale, app_locale in LOCALES.items():
+        out = SHOT_OUT if site_locale == "en" else SHOT_OUT / site_locale
+        out.mkdir(parents=True, exist_ok=True)
+        for name in SHOTS:
+            src = RAW_SRC / app_locale / f"{name}.png"
+            if not src.exists():
+                print(f"  missing {src}")
+                continue
+            im = Image.open(src).convert("RGB")
+            # 2x the 12rem CSS display width — retina-sharp, small on the wire.
+            im = im.resize((430, 932), Image.LANCZOS)
+            dst = out / f"{name}.jpg"
+            im.save(dst, "JPEG", quality=82, optimize=True, progressive=True)
+            print(f"  {dst.relative_to(HERE)}  {dst.stat().st_size // 1024} KB")
 
 
 def icons() -> None:
