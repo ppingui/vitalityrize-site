@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{head_extra}}<meta name="apple-itunes-app" content="app-id={{app_id}}">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{brand}}">
+<meta property="og:locale" content="{{og_locale}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{og_image}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.png" sizes="any">
+<link rel="apple-touch-icon" href="/assets/icon-180.png">
+<link rel="stylesheet" href="/styles.css">
+{{jsonld}}
+{{analytics}}
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="{{home}}"><span>{{brand}}</span></a>
+    <nav aria-label="Main">{{nav}}</nav>
+  </div>
+</header>
+
+<main id="main" class="wrap {{main_class}}">
+  <h1>{{h1}}</h1>
+{{byline}}
+{{tldr}}
+{{body}}
+{{faq}}
+{{langswitch}}
+</main>
+
+<div class="wrap">
+{{safety}}
+</div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="disclaimer">{{disclaimer}}</p>
+    <nav aria-label="Footer">{{footer_nav}}</nav>
+    <p class="copy">© {{year}} {{brand}} · Built by <a href="/about/">Kyrylo Lozovyi</a>
+      · <a href="mailto:{{email}}">{{email}}</a></p>
+  </div>
+</footer>
+</body>
+</html>

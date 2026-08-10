@@ -1,0 +1,221 @@
+<!--meta
+{
+  "slug": "pelvic-floor-self-check",
+  "lang": "en",
+  "type": "article",
+  "medical": true,
+  "published": "2026-08-10",
+  "updated": "2026-08-10",
+  "title": "Pelvic floor self-check for men: tight, weak or neither",
+  "description": "Eight questions that sort your symptoms into a weak pelvic floor, an over-tight one, or see-a-doctor. Runs in your browser; nothing is stored or sent.",
+  "h1": "Pelvic floor self-check",
+  "tldr": "Kegels help a weak pelvic floor and make an over-tight one worse, and the two can feel similar from the inside. This eight-question check sorts your symptoms into <strong>likely weak</strong>, <strong>likely too tight</strong>, or <strong>see a doctor first</strong>. It is not a diagnosis and it is not a validated clinical instrument — it is a sorting tool, so you do not spend three months strengthening a muscle that needed the opposite.",
+  "faq": [
+    ["Is this a medical test?", "No. It is a self-sorting tool we wrote, not a validated clinical questionnaire, and it produces a direction to look in rather than a diagnosis. Validated instruments for this area — the IIEF for erectile function, the NIH-CPSI for pelvic pain — exist and are administered by clinicians."],
+    ["Is my data stored anywhere?", "No. The whole thing runs in your browser with JavaScript. Nothing is transmitted, nothing is saved, and closing the tab erases it. There is no analytics event attached to your answers."],
+    ["What does 'too tight' mean?", "A hypertonic pelvic floor is one that sits contracted and cannot fully release. It produces pain in the perineum, penis or testicles, pain after ejaculation, difficulty starting urination, and a feeling of incomplete emptying. Strengthening exercises make it worse; the treatment is release work, usually with a pelvic health physiotherapist."],
+    ["I got 'see a doctor' — does that mean something is wrong?", "It means your answers included something that an exercise programme cannot address and that has a reasonable chance of having a findable cause — sudden onset, pain, or symptoms that cluster with cardiovascular or hormonal problems. It is a prompt to get it looked at, not a prediction."],
+    ["Can I be both weak and tight?", "Yes, and it is common. A muscle that is held short is also a muscle that cannot generate force from a good starting length. Where both scores are high, release work comes first and strengthening comes after — which is the order a physiotherapist would use."]
+  ]
+}
+-->
+<p>The single most useful thing you can know before starting pelvic floor training is
+  whether your pelvic floor needs strengthening at all. Roughly the same set of
+  complaints — poor erections, dribbling, a sense that something is off down there — can
+  come from a floor that is too weak or one that is chronically too tight, and the
+  treatments are opposites.</p>
+
+<div class="tool">
+  <form id="check">
+    <fieldset>
+      <legend>1. Do you leak a few drops of urine after you have finished and zipped up?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q1" value="0"><span>Never</span></label>
+        <label><input type="radio" name="q1" value="1"><span>Sometimes</span></label>
+        <label><input type="radio" name="q1" value="2"><span>Most times</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. When you get an erection, what usually happens?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q2" value="0"><span>It holds fine</span></label>
+        <label><input type="radio" name="q2" value="2"><span>It starts well then fades</span></label>
+        <label><input type="radio" name="q2" value="9"><span>It often doesn't happen at all</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Do you wake with erections, or get them on your own?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q3" value="0"><span>Yes, regularly</span></label>
+        <label><input type="radio" name="q3" value="1"><span>Occasionally</span></label>
+        <label><input type="radio" name="q3" value="9"><span>Rarely or never</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Any pain or aching in the perineum, penis, testicles or lower abdomen?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q4" value="0"><span>None</span></label>
+        <label><input type="radio" name="q4" value="3"><span>Sometimes</span></label>
+        <label><input type="radio" name="q4" value="6"><span>Often</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. Do you ache or feel worse for a while after ejaculating?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q5" value="0"><span>No</span></label>
+        <label><input type="radio" name="q5" value="3"><span>Sometimes</span></label>
+        <label><input type="radio" name="q5" value="6"><span>Usually</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6. Is it hard to start urinating, or does the stream stop and start?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q6" value="0"><span>No</span></label>
+        <label><input type="radio" name="q6" value="3"><span>Sometimes</span></label>
+        <label><input type="radio" name="q6" value="6"><span>Often</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>7. When did this start?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q7" value="0"><span>Gradually, over years</span></label>
+        <label><input type="radio" name="q7" value="0"><span>Gradually, over months</span></label>
+        <label><input type="radio" name="q7" value="9"><span>Suddenly, over days or weeks</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>8. Any of these arrived around the same time?</legend>
+      <div class="opts">
+        <label><input type="radio" name="q8" value="0"><span>None of them</span></label>
+        <label><input type="radio" name="q8" value="9"><span>Chest pain or breathlessness on exertion</span></label>
+        <label><input type="radio" name="q8" value="9"><span>New fatigue, low mood or loss of libido</span></label>
+        <label><input type="radio" name="q8" value="9"><span>A new medication</span></label>
+      </div>
+    </fieldset>
+
+    <p><button class="btn" type="submit">See what it points at</button></p>
+  </form>
+
+  <div class="result" id="result" hidden>
+    <span class="verdict" id="verdict"></span>
+    <p class="band" id="band"></p>
+    <div id="advice"></div>
+  </div>
+
+  <noscript>
+    <p class="noscript">This check needs JavaScript. Everything it does happens in your
+      browser — there is no server to send answers to.</p>
+  </noscript>
+</div>
+
+<h2>What the three outcomes mean</h2>
+
+<h3>Likely weak or poorly coordinated</h3>
+<p>Post-void dribbling and losing rigidity partway are the two classic signs that the
+  pelvic floor is not doing its mechanical job. This is the picture that pelvic floor
+  training was studied in, and the one where
+  <a href="/pelvic-floor-exercises-erectile-dysfunction/">the trial numbers</a> apply.
+  Start with the protocol on <a href="/kegel-exercises-for-men/">the kegel page</a> and
+  give it three months.</p>
+
+<h3>Likely too tight</h3>
+<p>Pain, post-ejaculatory ache and urinary hesitancy point the other way. Strengthening a
+  muscle that already cannot release will make all three worse. What helps is
+  down-training: diaphragmatic breathing, hip and adductor release, warm baths, and —
+  properly — a pelvic health physiotherapist, who can assess the muscle directly rather
+  than guessing from symptoms. Ask a GP for a referral, or search for a
+  physiotherapist specialising in male pelvic health.</p>
+
+<h3>See a doctor first</h3>
+<p>Sudden onset, absent morning erections, or symptoms clustering with chest pain,
+  fatigue or a new medication all point away from muscle and towards something with a
+  cause worth finding. Absent morning erections in particular suggest a vascular,
+  neurological or hormonal mechanism rather than a psychological or muscular one, because
+  they happen without any conscious involvement at all.</p>
+
+{{cta:selfcheck_foot}}
+
+<script>
+(function () {
+  var form = document.getElementById('check');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = function (n) {
+      var el = form.querySelector('input[name="' + n + '"]:checked');
+      return el ? parseInt(el.value, 10) : null;
+    };
+    var names = ['q1','q2','q3','q4','q5','q6','q7','q8'];
+    var vals = names.map(v);
+    if (vals.some(function (x) { return x === null; })) {
+      alert('Answer all eight questions first.');
+      return;
+    }
+    // A 9 on any question is a referral flag, not a score.
+    var refer = vals.some(function (x) { return x === 9; });
+    var tight = vals[3] + vals[4] + vals[5];              // q4 q5 q6
+    var weak  = vals[0] * 3 + vals[1] * 3;                // q1 q2
+
+    var verdict, band, advice;
+    if (refer) {
+      verdict = 'See a doctor first';
+      band = 'Your answers include something an exercise programme cannot address.';
+      advice = '<p>Sudden onset, absent spontaneous erections, or symptoms arriving ' +
+        'alongside chest pain, fatigue, low mood or a new medication all point at a ' +
+        'cause worth finding. Book an appointment before you start a training ' +
+        'programme — and mention the erection problem explicitly, because it is a ' +
+        'useful cardiovascular signal and doctors treat it as one.</p>' +
+        '<p><a href="/erectile-dysfunction-without-medication/">What else has evidence, ' +
+        'once you have ruled things out →</a></p>';
+    } else if (tight >= 6 && tight >= weak) {
+      verdict = 'Likely too tight';
+      band = 'Pain and urinary hesitancy point at a pelvic floor that will not release.';
+      advice = '<p>Kegels are the wrong direction here and can make these symptoms ' +
+        'worse. What helps is release work — diaphragmatic breathing, hip and adductor ' +
+        'stretching, heat — and an assessment by a pelvic health physiotherapist, who ' +
+        'can feel what the muscle is actually doing.</p>' +
+        '<p>If you train at all, train the relax phase and leave the strengthening ' +
+        'until a clinician has looked at it.</p>';
+    } else if (weak >= 3 && weak >= tight) {
+      verdict = 'Likely weak';
+      band = 'This is the pattern pelvic floor training was studied in.';
+      advice = '<p>Dribbling after urinating and losing rigidity partway are the two ' +
+        'signs that the muscle is not doing its mechanical job. Start with three sets ' +
+        'of eight to twelve squeezes a day, 3–6 second holds, released for at least as ' +
+        'long as you held.</p>' +
+        '<p><a href="/kegel-exercises-for-men/">The full protocol and the four common ' +
+        'mistakes →</a></p>';
+    } else if (tight >= 3) {
+      verdict = 'Leaning too tight';
+      band = 'Some tension signs, not enough to be clear-cut.';
+      advice = '<p>There is enough here to be careful. Train the release phase — a ' +
+        'full, unhurried let-go after every squeeze — and stop if pain or urinary ' +
+        'hesitancy gets worse over the first fortnight rather than better. If it does, ' +
+        'that answers the question and you want a pelvic health physiotherapist.</p>';
+    } else {
+      verdict = 'Nothing obvious';
+      band = 'Your answers do not point clearly at either problem.';
+      advice = '<p>Nothing here suggests a pelvic floor that is either weak enough or ' +
+        'tight enough to explain much. Training it will not hurt and may help ' +
+        'ejaculatory control, but if you came here with a specific complaint, the ' +
+        'cause is probably elsewhere.</p>' +
+        '<p><a href="/erectile-dysfunction-without-medication/">The other things with ' +
+        'evidence behind them →</a></p>';
+    }
+
+    document.getElementById('verdict').textContent = verdict;
+    document.getElementById('band').textContent = band;
+    document.getElementById('advice').innerHTML = advice;
+    var box = document.getElementById('result');
+    box.hidden = false;
+    box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+})();
+</script>

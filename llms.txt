@@ -1,0 +1,35 @@
+# VitalityRise — Men's Pelvic Floor Training
+
+VitalityRise (App Store name: Vitality Rise: Men's Health) is an iPhone app for men's pelvic floor training. It runs guided contract-and-relax sessions, pelvic mobility and breathing work, a 30-day plan, and progress scoring. Everything a user enters stays on the device: no account, no cloud sync, no ads. Built by Kyrylo Lozovyi (VITALITY RISE LLC). US pricing: $4.99/week, $9.99/month or $34.99/year (both with a 3-day free trial), or $99.99 once. iOS 17 or later.
+
+It is a general wellness app, not medical care, and does not diagnose or treat erectile dysfunction or any other condition.
+
+## Pages
+
+- [Pelvic floor training for men, done properly](https://www.vitalityrize.me/): A guided pelvic floor trainer for men: timed contract-and-relax sessions, breathing and mobility work, a 30-day plan. Your answers stay on your device.
+- [Who builds VitalityRise](https://www.vitalityrize.me/about/): VitalityRise is built by one developer, Kyrylo Lozovyi, trading as VITALITY RISE LLC. No investors, no medical board — and rules the app will not break.
+- [Kegel apps for men, compared](https://www.vitalityrize.me/best-kegel-apps-for-men/): Dr. Kegel, Kegel Men, Better P, Kegel Trainer and VitalityRise: what each costs on the App Store and which to pick. Disclosure — we make one of them.
+- [Erectile dysfunction without medication](https://www.vitalityrize.me/erectile-dysfunction-without-medication/): Aerobic exercise, weight, sleep, smoking, alcohol and pelvic floor training, ranked by the evidence behind each — plus what does not work.
+- [Kegel exercises for men](https://www.vitalityrize.me/kegel-exercises-for-men/): How to find the muscle, the squeeze-and-release protocol used in the trials, how many reps, and the four mistakes that make the whole thing useless.
+- [How the programme was built](https://www.vitalityrize.me/methodology/): The sources behind the 30-day plan — the pelvic floor trials, the physical activity reviews, the session timings — and what we deliberately left out.
+- [Pelvic floor exercises and erectile dysfunction](https://www.vitalityrize.me/pelvic-floor-exercises-erectile-dysfunction/): The randomised trial numbers: 40% of men regained normal erectile function at six months, 35.5% improved, 24.5% did not. Plus the mechanism and the limits.
+- [Pelvic floor self-check](https://www.vitalityrize.me/pelvic-floor-self-check/): Eight questions that sort your symptoms into a weak pelvic floor, an over-tight one, or see-a-doctor. Runs in your browser; nothing is stored or sent.
+- [Exercises for premature ejaculation](https://www.vitalityrize.me/premature-ejaculation-exercises/): A 12-week programme took 40 men with lifelong premature ejaculation from 31.7 seconds to 146.2. What the study proved, what it did not, and the protocol.
+- [Privacy Policy](https://www.vitalityrize.me/privacy/): What VitalityRise stores on your device, what it never uploads, the anonymous analytics it does send, and how to erase everything.
+- [Support](https://www.vitalityrize.me/support/): How to cancel or restore a VitalityRise subscription, what the Apple Health permission does, how the discreet reminders work, and how to reach a human.
+- [Terms of Use](https://www.vitalityrize.me/terms/): The terms that apply to using the VitalityRise app and this website, including the wellness disclaimer, subscription terms and limitation of liability.
+- [Beckenbodentraining für Männer, richtig gemacht](https://www.vitalityrize.me/de/): Geführtes Beckenbodentraining für Männer: getaktetes Anspannen und Loslassen, Atem- und Mobilitätsübungen, 30-Tage-Plan. Alles bleibt auf dem Gerät.
+- [Beckenboden und Erektionsstörungen](https://www.vitalityrize.me/de/beckenbodentraining-erektionsstoerung/): Die Zahlen der randomisierten Studie: nach sechs Monaten hatten 40 % wieder normale Erektionsfähigkeit, 35,5 % verbesserten sich, 24,5 % nicht.
+- [Beckenbodentraining für Männer](https://www.vitalityrize.me/de/beckenbodentraining-maenner/): Den Beckenboden finden, das Protokoll aus den Studien, wie viele Wiederholungen, wie lange es dauert — und die vier Fehler, die alles zunichtemachen.
+- [Suelo pélvico para hombres, bien hecho](https://www.vitalityrize.me/es/): Entrenamiento guiado del suelo pélvico para hombres: contracción y relajación cronometradas, respiración, movilidad y un plan de 30 días en el iPhone.
+- [Ejercicios de Kegel para hombres](https://www.vitalityrize.me/es/ejercicios-kegel-hombres/): Cómo localizar el suelo pélvico, el protocolo de los ensayos, cuántas repeticiones, cuánto tarda en notarse y los cuatro errores que lo estropean todo.
+- [Suelo pélvico y disfunción eréctil](https://www.vitalityrize.me/es/suelo-pelvico-disfuncion-erectil/): Las cifras del ensayo aleatorizado: a los seis meses el 40 % recuperó la función eréctil normal, el 35,5 % mejoró y el 24,5 % no mejoró nada.
+- [Le périnée masculin, entraîné correctement](https://www.vitalityrize.me/fr/): Entraînement guidé du périnée masculin : contractions et relâchements minutés, respiration, mobilité et un plan de 30 jours, entièrement sur l'iPhone.
+- [Exercices de Kegel pour l'homme](https://www.vitalityrize.me/fr/exercices-kegel-homme/): Comment trouver le périnée, le protocole utilisé dans les essais, combien de répétitions, en combien de temps, et les quatre erreurs qui rendent tout inutile.
+- [Périnée et dysfonction érectile](https://www.vitalityrize.me/fr/perinee-dysfonction-erectile/): Les chiffres de l'essai randomisé : à six mois, 40 % avaient retrouvé une fonction érectile normale, 35,5 % s'étaient améliorés, 24,5 % non.
+- [男性の骨盤底筋トレーニングを、正しく](https://www.vitalityrize.me/ja/): 男性向けの骨盤底筋トレーニングアプリ。締める・緩めるを自動で計測し、呼吸と可動性のセッション、30日プランを iPhone で。回答は端末に残ります。
+- [男性のケーゲル運動](https://www.vitalityrize.me/ja/kegel-exercise-men/): 骨盤底筋の見つけ方、臨床試験で使われたプロトコル、回数、効果が出るまでの期間、そして台無しにする4つの間違い。
+- [骨盤底筋と勃起障害（ED）](https://www.vitalityrize.me/ja/kotsubanteikin-ed/): ランダム化試験の数字：6か月で40%が正常な勃起機能を回復し、35.5%が改善、24.5%は改善しませんでした。仕組みと限界も含めて解説します。
+- [Assoalho pélvico masculino, do jeito certo](https://www.vitalityrize.me/pt/): Treino guiado do assoalho pélvico masculino: contração e relaxamento cronometrados, respiração, mobilidade e um plano de 30 dias, tudo no iPhone.
+- [Assoalho pélvico e disfunção erétil](https://www.vitalityrize.me/pt/assoalho-pelvico-disfuncao-eretil/): Os números do ensaio randomizado: em seis meses, 40% dos homens recuperaram a função erétil normal, 35,5% melhoraram e 24,5% não melhoraram nada.
+- [Exercícios de Kegel para homens](https://www.vitalityrize.me/pt/exercicios-kegel-homens/): Como achar o assoalho pélvico, o protocolo usado nos ensaios, quantas repetições, quanto tempo até mudar algo e os quatro erros que tornam tudo inútil.
