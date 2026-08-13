@@ -75,7 +75,7 @@ NAV = {
     "en": [
         ("/kegel-exercises-for-men/", "Kegels for men"),
         ("/pelvic-floor-exercises-erectile-dysfunction/", "ED evidence"),
-        ("/best-kegel-apps-for-men/", "App comparison"),
+        ("/guides/", "All guides"),
         ("/pelvic-floor-self-check/", "Self-check"),
     ],
     "de": [
