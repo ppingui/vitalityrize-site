@@ -93,6 +93,7 @@ NAV = {
     "de": [
         ("/de/beckenbodentraining-maenner/", "Beckenboden"),
         ("/de/beckenbodentraining-erektionsstoerung/", "Erektion"),
+        ("/de/uebungen-vorzeitiger-samenerguss/", "Samenerguss"),
     ],
     "es": [
         ("/es/ejercicios-kegel-hombres/", "Kegel"),
@@ -102,10 +103,12 @@ NAV = {
     "fr": [
         ("/fr/exercices-kegel-homme/", "Kegel"),
         ("/fr/perinee-dysfonction-erectile/", "Érection"),
+        ("/fr/exercices-ejaculation-precoce/", "Éjaculation précoce"),
     ],
     "pt": [
         ("/pt/exercicios-kegel-homens/", "Kegel"),
         ("/pt/assoalho-pelvico-disfuncao-eretil/", "Ereção"),
+        ("/pt/exercicios-ejaculacao-precoce/", "Ejaculação precoce"),
     ],
     "ja": [
         ("/ja/kegel-exercise-men/", "骨盤底筋"),
