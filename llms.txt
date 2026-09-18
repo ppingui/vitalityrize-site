@@ -4,6 +4,8 @@ VitalityRise (App Store name: Vitality Rise: Men's Health) is an iPhone app for 
 
 It is a general wellness app, not medical care, and does not diagnose or treat erectile dysfunction or any other condition.
 
+The full text of every page, in one file: https://www.vitalityrize.me/llms-full.txt
+
 ## Pages
 
 - [Pelvic floor training for men, done properly](https://www.vitalityrize.me/): A guided pelvic floor trainer for men: timed contract-and-relax sessions, breathing and mobility work, a 30-day plan. Your answers stay on your device.

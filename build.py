@@ -671,12 +671,14 @@ def main() -> None:
             raise SystemExit(f"cluster {name!r} has no English page for x-default")
 
     pages = []
+    bodies: dict[str, str] = {}
     for path, meta, body in parsed:
         out_path = ROOT / "index.html" if meta["slug"] == "" \
             else ROOT / meta["slug"] / "index.html"
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(render(meta, body, template, clusters), encoding="utf-8")
         pages.append(meta)
+        bodies[meta["slug"]] = body
         print(f"  {str(path.relative_to(PAGES)):46} -> {out_path.relative_to(ROOT)}")
 
     # 404 (GitHub Pages serves /404.html for unknown paths)
@@ -752,6 +754,8 @@ def main() -> None:
         "It is a general wellness app, not medical care, and does not diagnose or "
         "treat erectile dysfunction or any other condition.",
         "",
+        f"The full text of every page, in one file: {SITE}/llms-full.txt",
+        "",
         "## Pages",
         "",
     ]
@@ -760,9 +764,44 @@ def main() -> None:
                      f"{meta['description']}")
     (ROOT / "llms.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
+    # llms-full.txt: the same pages as plain text, for answer engines that fetch
+    # the whole site in one request. Shortcodes and markup stripped, FAQ kept as
+    # question/answer pairs, English before the other locales.
+    def plain(fragment: str) -> str:
+        t = SHORTCODE_RE.sub("", fragment)
+        t = re.sub(r"<script.*?</script>", "", t, flags=re.S)
+        t = re.sub(r"</(p|li|h[1-6]|tr|div|table)>", "\n", t)
+        t = re.sub(r"<li[^>]*>", "- ", t)
+        t = re.sub(r"<h2[^>]*>", "\n## ", t)
+        t = re.sub(r"<h3[^>]*>", "\n### ", t)
+        t = re.sub(r"<[^>]+>", "", t)
+        t = html.unescape(t)
+        t = re.sub(r"[ \t]+", " ", t)
+        t = re.sub(r" *\n *", "\n", t)
+        return re.sub(r"\n{3,}", "\n\n", t).strip()
+
+    full = [f"# {BRAND_FULL}", "", lines[2], "", lines[4], "",
+            f"Index: {SITE}/llms.txt", ""]
+    for meta in sorted(indexable, key=lambda m: (m["lang"] != "en", m["slug"])):
+        full += ["", "=" * 72, f"# {meta['h1']}",
+                 f"URL: {canonical_for(meta['slug'])}",
+                 f"Language: {LANGS[meta['lang']]['hreflang']}",
+                 f"Description: {meta['description']}"]
+        if meta.get("published"):
+            full.append(f"Published: {meta['published']} · Updated: "
+                        f"{meta.get('updated', meta['published'])}")
+        if meta.get("tldr"):
+            full += ["", f"{UI[meta['lang']]['tldr']} {plain(meta['tldr'])}"]
+        full += ["", plain(bodies[meta["slug"]])]
+        if meta.get("faq"):
+            full += ["", f"## {UI[meta['lang']]['faq_h']}"]
+            for q, a in meta["faq"]:
+                full += ["", f"Q: {q}", f"A: {plain(a)}"]
+    (ROOT / "llms-full.txt").write_text("\n".join(full) + "\n", encoding="utf-8")
+
     print(f"\n{len(urls)} indexable pages across "
           f"{len({m['lang'] for m in pages})} languages.")
-    print("sitemap.xml + robots.txt + llms.txt + CNAME written.")
+    print("sitemap.xml + robots.txt + llms.txt + llms-full.txt + CNAME written.")
 
 
 if __name__ == "__main__":
