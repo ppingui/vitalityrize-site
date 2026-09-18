@@ -97,6 +97,7 @@ NAV = {
     "es": [
         ("/es/ejercicios-kegel-hombres/", "Kegel"),
         ("/es/suelo-pelvico-disfuncion-erectil/", "Erección"),
+        ("/es/ejercicios-eyaculacion-precoz/", "Eyaculación precoz"),
     ],
     "fr": [
         ("/fr/exercices-kegel-homme/", "Kegel"),

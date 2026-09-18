@@ -92,6 +92,30 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://www.vitalityrize.me/pt/"/>
   </url>
   <url>
+    <loc>https://www.vitalityrize.me/es/como-encontrar-suelo-pelvico/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/how-to-find-pelvic-floor-muscles-men/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/how-to-find-pelvic-floor-muscles-men/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/como-encontrar-suelo-pelvico/"/>
+  </url>
+  <url>
+    <loc>https://www.vitalityrize.me/es/cuanto-tardan-ejercicios-kegel/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/how-long-do-kegels-take-to-work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/how-long-do-kegels-take-to-work/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/cuanto-tardan-ejercicios-kegel/"/>
+  </url>
+  <url>
+    <loc>https://www.vitalityrize.me/es/ejercicios-eyaculacion-precoz/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/premature-ejaculation-exercises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/premature-ejaculation-exercises/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/ejercicios-eyaculacion-precoz/"/>
+  </url>
+  <url>
     <loc>https://www.vitalityrize.me/es/ejercicios-kegel-hombres/</loc>
     <lastmod>2026-08-10</lastmod>
     <priority>0.8</priority>
@@ -160,11 +184,17 @@
     <loc>https://www.vitalityrize.me/how-long-do-kegels-take-to-work/</loc>
     <lastmod>2026-08-10</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/how-long-do-kegels-take-to-work/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/how-long-do-kegels-take-to-work/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/cuanto-tardan-ejercicios-kegel/"/>
   </url>
   <url>
     <loc>https://www.vitalityrize.me/how-to-find-pelvic-floor-muscles-men/</loc>
     <lastmod>2026-08-10</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/how-to-find-pelvic-floor-muscles-men/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/how-to-find-pelvic-floor-muscles-men/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/como-encontrar-suelo-pelvico/"/>
   </url>
   <url>
     <loc>https://www.vitalityrize.me/hypertonic-pelvic-floor-men/</loc>
@@ -265,6 +295,9 @@
     <loc>https://www.vitalityrize.me/premature-ejaculation-exercises/</loc>
     <lastmod>2026-09-18</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vitalityrize.me/premature-ejaculation-exercises/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vitalityrize.me/premature-ejaculation-exercises/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://www.vitalityrize.me/es/ejercicios-eyaculacion-precoz/"/>
   </url>
   <url>
     <loc>https://www.vitalityrize.me/privacy/</loc>
