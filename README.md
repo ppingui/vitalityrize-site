@@ -73,6 +73,20 @@ from the app repo next door (`../VitalityRise`). It needs Pillow; nothing else h
 python3 make_assets.py
 ```
 
+## Search Console
+
+```bash
+python3 gsc_report.py              # last 28 days: striking-distance, low-CTR, page-two, cannibalisation
+python3 gsc_report.py --days 90 --raw pages
+python3 gsc_report.py --list-sites
+```
+
+Authorises as you over OAuth (client JSON at `~/.gsc-oauth-client.json`, refresh token
+cached at `~/.gsc-token.json`, both outside the repo). The same credential serves
+pixelislands-site and trysilex-site; `--site sc-domain:trysilex.com` switches property.
+The URL Inspection API is not wired in — it is per-URL and quota-limited, so it lives in
+one-off scripts when needed.
+
 ## After deploying
 
 ```bash
