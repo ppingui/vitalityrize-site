@@ -33,6 +33,18 @@ AUTHOR = "Kyrylo Lozovyi"
 COMPANY = "VITALITY RISE LLC"
 EMAIL = "support@vitalityrize.me"
 
+# One Person node, referenced by @id from every page's author and the
+# Organization's founder, so search engines see one entity rather than a name
+# string repeated 40 times. trysilex.com carries the same @id for the same
+# reason — it is the same person.
+PERSON_ID = f"{SITE}/#kyrylo"
+PERSON_SAME_AS = [
+    "https://github.com/ppingui",
+    "https://apps.apple.com/us/developer/vitality-rise-llc/id1850294300",
+    "https://trysilex.com/about/",
+]
+SISTER_SITE = ("https://trysilex.com/", "Silex")
+
 # Prices verified against App Store Connect on 2026-08-10 (US storefront) via
 # `python3 scripts/asc.py subs` in the app repo. Re-verify before editing.
 PRICE_WEEKLY = "4.99"
@@ -106,6 +118,7 @@ UI = {
         "home": "Home",
         "about": "About",
         "method": "Methodology",
+        "standards": "Editorial standards",
         "support": "Support",
         "privacy": "Privacy",
         "terms": "Terms",
@@ -127,7 +140,7 @@ UI = {
     },
     "de": {
         "skip": "Zum Inhalt springen",
-        "home": "Start", "about": "Über uns", "method": "Methodik",
+        "home": "Start", "about": "Über uns", "method": "Methodik", "standards": "Redaktionsgrundsätze",
         "support": "Hilfe", "privacy": "Datenschutz", "terms": "AGB",
         "cta_h": "Trainieren Sie den Muskel. Privat.",
         "cta_p": "Geführte Beckenbodeneinheiten und ein 30-Tage-Plan auf Ihrem iPhone. "
@@ -145,7 +158,7 @@ UI = {
     },
     "es": {
         "skip": "Ir al contenido",
-        "home": "Inicio", "about": "Quiénes somos", "method": "Metodología",
+        "home": "Inicio", "about": "Quiénes somos", "method": "Metodología", "standards": "Criterios editoriales",
         "support": "Ayuda", "privacy": "Privacidad", "terms": "Términos",
         "cta_h": "Entrena el músculo. En privado.",
         "cta_p": "Sesiones guiadas de suelo pélvico y un plan de 30 días en tu iPhone. "
@@ -163,7 +176,7 @@ UI = {
     },
     "fr": {
         "skip": "Aller au contenu",
-        "home": "Accueil", "about": "À propos", "method": "Méthodologie",
+        "home": "Accueil", "about": "À propos", "method": "Méthodologie", "standards": "Charte éditoriale",
         "support": "Aide", "privacy": "Confidentialité", "terms": "Conditions",
         "cta_h": "Entraînez le muscle. En privé.",
         "cta_p": "Des séances guidées du périnée et un plan de 30 jours sur votre iPhone. "
@@ -181,7 +194,7 @@ UI = {
     },
     "pt": {
         "skip": "Ir para o conteúdo",
-        "home": "Início", "about": "Sobre", "method": "Metodologia",
+        "home": "Início", "about": "Sobre", "method": "Metodologia", "standards": "Padrões editoriais",
         "support": "Suporte", "privacy": "Privacidade", "terms": "Termos",
         "cta_h": "Treine o músculo. Com privacidade.",
         "cta_p": "Sessões guiadas de assoalho pélvico e um plano de 30 dias no seu iPhone. "
@@ -199,7 +212,7 @@ UI = {
     },
     "ja": {
         "skip": "本文へスキップ",
-        "home": "ホーム", "about": "運営者", "method": "根拠",
+        "home": "ホーム", "about": "運営者", "method": "根拠", "standards": "編集方針",
         "support": "サポート", "privacy": "プライバシー", "terms": "利用規約",
         "cta_h": "筋肉を鍛える。誰にも知られずに。",
         "cta_p": "ガイド付きの骨盤底筋セッションと30日プランを iPhone 上で。"
@@ -456,16 +469,25 @@ def pretty(iso: str, lang: str = "en") -> str:
 
 
 def jsonld_for(meta: dict) -> str:
+    person = {
+        "@type": "Person",
+        "@id": PERSON_ID,
+        "name": AUTHOR,
+        "url": f"{SITE}/about/",
+        "jobTitle": "Independent iOS developer",
+        "worksFor": {"@id": f"{SITE}/#org"},
+        "sameAs": PERSON_SAME_AS,
+    }
     org = {
         "@type": "Organization",
         "@id": f"{SITE}/#org",
         "name": COMPANY,
         "alternateName": BRAND,
         "url": SITE,
-        "founder": {"@type": "Person", "name": AUTHOR},
+        "founder": {"@id": PERSON_ID},
         "email": EMAIL,
     }
-    graph: list[dict] = [org]
+    graph: list[dict] = [person, org]
 
     # Every locale homepage describes the same site and the same app, so they
     # share the @id nodes rather than each minting its own entity.
@@ -512,7 +534,7 @@ def jsonld_for(meta: dict) -> str:
             "inLanguage": LANGS[meta["lang"]]["hreflang"],
             "datePublished": meta["published"],
             "dateModified": meta.get("updated", meta["published"]),
-            "author": {"@type": "Person", "name": AUTHOR, "url": f"{SITE}/about/"},
+            "author": {"@id": PERSON_ID},
             "publisher": {"@id": f"{SITE}/#org"},
             "mainEntityOfPage": canonical_for(meta["slug"]),
         }
@@ -558,6 +580,7 @@ def footer_nav(lang: str) -> str:
             (home, u["home"]),
             ("/about/", u["about"]),
             ("/methodology/", u["method"]),
+            ("/editorial-standards/", u["standards"]),
             ("/support/", u["support"]),
             ("/privacy/", u["privacy"]),
             ("/terms/", u["terms"]),
